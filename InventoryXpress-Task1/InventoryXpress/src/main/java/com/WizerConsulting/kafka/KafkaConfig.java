@@ -16,14 +16,14 @@ public class KafkaTopicConfig {
     private String topicJsonName;
 
     @Bean
-    public NewTopic javaguidesTopic(){
-        return TopicBuilder.name(topicName)
+    public NewTopic orderCreationTopic(){
+        return TopicBuilder.name(orderCreation)
                 .build();
     }
 
     @Bean
-    public NewTopic javaguidesJsonTopic(){
-        return TopicBuilder.name(topicJsonName)
+    public NewTopic orderCreationTopic(){
+        return TopicBuilder.name(orderCreation)
                 .build();
     }
 }
